@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arild's Frisør – Sandnes</title>
+  <meta name="description" content="Arild's Frisør i Sandnes – familiebedrift siden 1970. Klipp, farge, skjegg og mer for hele familien. Bestill time enkelt online." />
+  <meta name="theme-color" content="#111110" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hjem" class="header__logo" aria-label="Arild's Frisør – hjem">
+        <img
+          src="https://res.cloudinary.com/odin-systemer/image/upload/v1400494012/department/department_1419_webbanner.jpg"
+          alt="Arild's Frisør"
+          class="logo-img"
+          width="120"
+          height="48"
+        />
+      </a>
+
+      <nav class="nav" aria-label="Hovedmeny">
+        <ul class="nav__list">
+          <li><a href="#om-oss"    class="nav__link">Om oss</a></li>
+          <li><a href="#tjenester" class="nav__link">Tjenester</a></li>
+          <li><a href="#team"      class="nav__link">Team</a></li>
+          <li><a href="#kontakt"   class="nav__link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <a
+        href="https://arilds.onlinetimebok.no/"
+        class="btn btn--accent header__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Bestill time</a>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Åpne meny"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MOBILE NAV ===================== -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobilmeny" aria-hidden="true">
+    <ul class="mobile-nav__list">
+      <li><a href="#om-oss"    class="mobile-nav__link">Om oss</a></li>
+      <li><a href="#tjenester" class="mobile-nav__link">Tjenester</a></li>
+      <li><a href="#team"      class="mobile-nav__link">Team</a></li>
+      <li><a href="#kontakt"   class="mobile-nav__link">Kontakt</a></li>
+      <li>
+        <a
+          href="https://arilds.onlinetimebok.no/"
+          class="btn btn--accent btn--lg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Bestill time</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hjem">
+    <div class="hero__bg">
+      <img
+        src="https://res.cloudinary.com/odin-systemer/image/upload/v1583140202/salonHomepageBanner/1419_1_homepagebanner.jpg"
+        alt=""
+        class="hero__img"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="hero__overlay" aria-hidden="true"></div>
+    </div>
+
+    <div class="container hero__content">
+      <span class="hero__eyebrow">Familiebedrift siden 1970</span>
+      <h1 class="hero__title">Håndverk.<br />Tradisjon.<br />Stil.</h1>
+      <p class="hero__sub">
+        Profesjonell frisørsalong i Sandnes for hele familien –<br class="hero__br" />
+        dame, herre, skjegg og barn.
+      </p>
+      <div class="hero__actions">
+        <a
+          href="https://arilds.onlinetimebok.no/"
+          class="btn btn--accent btn--lg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Bestill time</a>
+        <a href="#tjenester" class="btn btn--ghost btn--lg">Se tjenester</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ===================== OM OSS ===================== -->
+  <section class="section om-oss" id="om-oss">
+    <div class="container om-oss__inner">
+
+      <div class="om-oss__text">
+        <span class="section-label reveal">Vår historie</span>
+        <h2 class="section-title reveal">Mer enn 50 år<br />med godt håndverk</h2>
+        <p class="reveal">
+          Arild's Frisør har vært en del av Sandnes siden 1970. Det som startet som
+          en liten familiebedrift, drives nå videre av neste generasjon – med samme
+          engasjement for kvalitet og personlig service.
+        </p>
+        <p class="reveal">
+          Vi tar imot hele familien: fra babyklipp til herreklipp og damefrisering.
+          Alle våre frisører er fagbrevutdannede og bruker produkter fra
+          <strong>Goldwell</strong>.
+        </p>
+
+        <div class="stats">
+          <div class="stat reveal">
+            <span class="stat__num">50+</span>
+            <span class="stat__label">År i bransjen</span>
+          </div>
+          <div class="stat reveal" style="--delay: 0.1s">
+            <span class="stat__num">100%</span>
+            <span class="stat__label">Fagbrevutdannede</span>
+          </div>
+          <div class="stat reveal" style="--delay: 0.2s">
+            <span class="stat__num">Sandnes</span>
+            <span class="stat__label">Gjesdalveien 18</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="om-oss__image reveal">
+        <img
+          src="https://res.cloudinary.com/odin-systemer/image/upload/v1583140298/salonHomepageBanner/1419_4_homepagebanner.jpg"
+          alt="Profesjonell frisørklipp hos Arild's Frisør"
+          loading="lazy"
+        />
+        <div class="om-oss__deco" aria-hidden="true"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== TJENESTER ===================== -->
+  <section class="section tjenester" id="tjenester">
+    <div class="container">
+      <span class="section-label reveal">Prisliste</span>
+      <h2 class="section-title reveal">Tjenester</h2>
+
+      <div class="tabs" role="tablist" aria-label="Tjenestetyper">
+        <button class="tab tab--active" role="tab" data-tab="klipp"    aria-selected="true"  aria-controls="tab-klipp">Klipp</button>
+        <button class="tab"             role="tab" data-tab="farge"    aria-selected="false" aria-controls="tab-farge">Farge</button>
+        <button class="tab"             role="tab" data-tab="striper"  aria-selected="false" aria-controls="tab-striper">Striper</button>
+        <button class="tab"             role="tab" data-tab="struktur" aria-selected="false" aria-controls="tab-struktur">Struktur</button>
+        <button class="tab"             role="tab" data-tab="diverse"  aria-selected="false" aria-controls="tab-diverse">Diverse</button>
+      </div>
+
+      <!-- Klipp -->
+      <div class="services-grid" id="tab-klipp" role="tabpanel">
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Herreklipp</span><span class="service-card__dur">30 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 745,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADcAIAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Herreklipp m. skjegg</span><span class="service-card__dur">60 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 990,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADgAIAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Skjeggklipp</span><span class="service-card__dur">30 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 530,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADEAMgAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Maskinklipp</span><span class="service-card__dur">30 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 435,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADEAMAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Dameklipp m. føn</span><span class="service-card__dur">60 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 960,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADQAIAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Dameklipp uten føn</span><span class="service-card__dur">45 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 895,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADUAIAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Gutteklipp 7–13 år</span><span class="service-card__dur">30 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 640,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADYAIAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Jenteklipp 7–13 år</span><span class="service-card__dur">45 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 680,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADkAIAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Barneklipp 4–6 år</span><span class="service-card__dur">30 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 565,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADIAIAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Babyklipp 0–3 år</span><span class="service-card__dur">30 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 475,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADEAIAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+      </div>
+
+      <!-- Farge -->
+      <div class="services-grid hidden" id="tab-farge" role="tabpanel">
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Farging kort hår</span><span class="service-card__dur">75 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 1 235,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADMAMAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Farging langt hår</span><span class="service-card__dur">90 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 1 585,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADMAMQAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Farging m. strip kort</span><span class="service-card__dur">75 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 1 925,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADQANwAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Minicolor kort hår</span><span class="service-card__dur">45 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 1 070,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADMANQAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Minicolor langt hår</span><span class="service-card__dur">60 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 1 285,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADMANgAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Reshade for men</span><span class="service-card__dur">15 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 495,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADMANwAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+      </div>
+
+      <!-- Striper -->
+      <div class="services-grid hidden" id="tab-striper" role="tabpanel">
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Bleking kort hår</span><span class="service-card__dur">75 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 1 205,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADIAOQAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Effektstriper</span><span class="service-card__dur">60 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 895,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADQAMAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Foliestrip kort hår</span><span class="service-card__dur">75 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 1 395,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgB0AGUAUwBAAG8ASABIAFQAMABCADMARQA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Strip i hette kort hår</span><span class="service-card__dur">90 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 1 235,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADMAOAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+      </div>
+
+      <!-- Struktur -->
+      <div class="services-grid hidden" id="tab-struktur" role="tabpanel">
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Strukturomforming kort hår</span><span class="service-card__dur">120 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 1 295,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADQAMQAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Vask og føn</span><span class="service-card__dur">30 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 565,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADQAMwAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Vask og legg</span><span class="service-card__dur">75 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 675,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADQANAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+      </div>
+
+      <!-- Diverse -->
+      <div class="services-grid hidden" id="tab-diverse" role="tabpanel">
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Bryn og vipper pakke</span><span class="service-card__dur">30 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 535,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADIAMwAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Farging av bryn</span><span class="service-card__dur">15 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 270,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADEANAAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Farging av vipper</span><span class="service-card__dur">15 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 340,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADIANgAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Napping av bryn</span><span class="service-card__dur">15 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 255,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADIAMQAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+        <div class="service-card"><div class="service-card__info"><span class="service-card__name">Napping og farging av bryn</span><span class="service-card__dur">30 min</span></div><div class="service-card__right"><span class="service-card__price">fra kr 395,-</span><a href="https://fixit.no/booking/1419/checkout?treatmentId=QgBMADgAMgBfAGYAYQBJAG0AcABfADIAMgAgACAAIAA" class="btn btn--book" target="_blank" rel="noopener noreferrer">Bestill</a></div></div>
+      </div>
+
+      <div class="tjenester__cta reveal">
+        <a
+          href="https://arilds.onlinetimebok.no/"
+          class="btn btn--accent btn--lg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Bestill time nå</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== QUOTE BANNER ===================== -->
+  <div class="quote-banner" aria-hidden="true">
+    <img
+      src="https://res.cloudinary.com/odin-systemer/image/upload/v1583140173/salonHomepageBanner/1419_2_homepagebanner.jpg"
+      alt=""
+      loading="lazy"
+    />
+    <div class="quote-banner__overlay">
+      <blockquote class="quote-banner__text">
+        «Vi tar oss tid til deg»
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- ===================== TEAM ===================== -->
+  <section class="section team" id="team">
+    <div class="container">
+      <span class="section-label reveal">Teamet vårt</span>
+      <h2 class="section-title reveal">Møt frisørene</h2>
+      <div class="team__grid">
+
+        <div class="team-card reveal">
+          <div class="team-card__img">
+            <img
+              src="assets/32384c42665f49616d705f3120202020.jpg"
+              alt="Christoffer – daglig leder og frisør"
+              loading="lazy"
+            />
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Christoffer</h3>
+            <span class="team-card__role">Daglig leder / Frisør</span>
+            <p class="team-card__bio">Jeg har jobbet som frisør siden 2000 og har svennebrev i både dame- og herrefrisørfaget. Jeg overtok virksomheten etter min far i 2006 og jobber nå stort sett som herrefrisør.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal" style="--delay: 0.15s">
+          <div class="team-card__img">
+            <img
+              src="assets/32384c42665f49616d705f3320202020.jpg"
+              alt="Camille – frisør"
+              loading="lazy"
+            />
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Camille</h3>
+            <span class="team-card__role">Frisør</span>
+            <p class="team-card__bio">Jeg har jobbet som frisør siden 2004 og har svennebrev i dame- og herrefrisørfaget. Jeg liker å jobbe med klipp og fargeteknikker. Foliestriper er min spesialitet, og brudepynting med make-up er jeg også glad i.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KONTAKT ===================== -->
+  <section class="section kontakt" id="kontakt">
+    <div class="container kontakt__inner">
+
+      <div class="kontakt__hours reveal">
+        <span class="section-label">Åpningstider</span>
+        <h2 class="section-title">Når kan<br />du komme?</h2>
+        <table class="hours-table">
+          <tbody>
+            <tr>
+              <td>Mandag – Onsdag</td>
+              <td>09:00 – 16:00</td>
+            </tr>
+            <tr>
+              <td>Torsdag – Fredag</td>
+              <td>09:00 – 18:00</td>
+            </tr>
+            <tr>
+              <td>Lørdag</td>
+              <td>09:00 – 14:00</td>
+            </tr>
+            <tr class="hours-table__closed">
+              <td>Søndag</td>
+              <td>Stengt</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="kontakt__info reveal" style="--delay: 0.15s">
+        <span class="section-label">Kontakt</span>
+        <h2 class="section-title">Finn oss</h2>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <address>Gjesdalveien 18<br />4306 Sandnes</address>
+          </li>
+          <li class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.17 6.17l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+4751665965">51 66 59 65</a>
+          </li>
+          <li class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:post@arildsfrisor.no">post@arildsfrisor.no</a>
+          </li>
+          <li class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a href="https://www.instagram.com/arildsfrisor/" target="_blank" rel="noopener noreferrer">@arildsfrisor</a>
+          </li>
+        </ul>
+        <a
+          href="https://arilds.onlinetimebok.no/"
+          class="btn btn--accent btn--lg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Bestill time</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hjem" class="footer__logo" aria-label="Tilbake til toppen">
+        <img
+          src="https://res.cloudinary.com/odin-systemer/image/upload/v1400494012/department/department_1419_webbanner.jpg"
+          alt="Arild's Frisør"
+          class="logo-img"
+          width="100"
+          height="40"
+          loading="lazy"
+        />
+      </a>
+      <nav class="footer__links" aria-label="Footer-lenker">
+        <a href="https://www.instagram.com/arildsfrisor/" target="_blank" rel="noopener noreferrer" class="footer__link">Instagram</a>
+        <a href="https://arilds.onlinetimebok.no/" target="_blank" rel="noopener noreferrer" class="footer__link">Bestill time</a>
+      </nav>
+      <p class="footer__copy">© 2024 Arild's Frisør AS &mdash; Sandnes</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
