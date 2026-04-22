@@ -1,4 +1,11 @@
 /* ============================================================
+   PRICE PREFIX — make "fra kr" smaller than the number
+   ============================================================ */
+document.querySelectorAll('.service-card__price').forEach(el => {
+  el.innerHTML = el.textContent.replace(/^(fra kr\s*)/, '<span class="price-prefix">$1</span>');
+});
+
+/* ============================================================
    HEADER — scroll state
    ============================================================ */
 const header = document.getElementById('header');
@@ -79,6 +86,89 @@ const revealObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.12, rootMargin: '0px 0px -32px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ============================================================
+   GALLERY CAROUSEL — progress indicator
+   ============================================================ */
+const galleryTrack = document.getElementById('gallery-track');
+const progressThumb = document.getElementById('gallery-progress-thumb');
+
+if (galleryTrack && progressThumb) {
+  const updateProgress = () => {
+    const { scrollLeft, scrollWidth, clientWidth } = galleryTrack;
+    const maxScroll = scrollWidth - clientWidth;
+    const thumbWidthPct = (clientWidth / scrollWidth) * 100;
+    const thumbLeftPct = maxScroll > 0 ? (scrollLeft / maxScroll) * (100 - thumbWidthPct) : 0;
+    progressThumb.style.width = thumbWidthPct + '%';
+    progressThumb.style.left = thumbLeftPct + '%';
+  };
+  galleryTrack.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+}
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+const lightbox       = document.getElementById('lightbox');
+const lightboxImg    = document.getElementById('lightbox-img');
+const lightboxClose  = document.getElementById('lightbox-close');
+const lightboxPrev   = document.getElementById('lightbox-prev');
+const lightboxNext   = document.getElementById('lightbox-next');
+const galleryImgs    = [...document.querySelectorAll('.gallery-item img')];
+let lightboxIndex    = 0;
+
+const setLightboxImg = (index, fade) => {
+  if (fade) lightboxImg.style.opacity = '0';
+  setTimeout(() => {
+    lightboxImg.src = galleryImgs[index].src;
+    lightboxImg.alt = galleryImgs[index].alt;
+    lightboxImg.style.opacity = '1';
+  }, fade ? 120 : 0);
+};
+
+const openLightbox = (index) => {
+  lightboxIndex = index;
+  setLightboxImg(index, false);
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+};
+
+const closeLightbox = () => {
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+};
+
+const showLightboxPrev = () => {
+  lightboxIndex = (lightboxIndex - 1 + galleryImgs.length) % galleryImgs.length;
+  setLightboxImg(lightboxIndex, true);
+};
+
+const showLightboxNext = () => {
+  lightboxIndex = (lightboxIndex + 1) % galleryImgs.length;
+  setLightboxImg(lightboxIndex, true);
+};
+
+galleryImgs.forEach((img, i) => {
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', () => openLightbox(i));
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightboxPrev.addEventListener('click', showLightboxPrev);
+lightboxNext.addEventListener('click', showLightboxNext);
+
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox || e.target === lightboxImg.parentElement) closeLightbox();
+});
+
+document.addEventListener('keydown', e => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape')      closeLightbox();
+  if (e.key === 'ArrowLeft')   showLightboxPrev();
+  if (e.key === 'ArrowRight')  showLightboxNext();
+});
 
 /* ============================================================
    SMOOTH ANCHOR — close mobile nav before scroll

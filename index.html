@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arild's Frisør – Sandnes</title>
-  <meta name="description" content="Arild's Frisør i Sandnes – familiebedrift siden 1970. Klipp, farge, skjegg og mer for hele familien. Bestill time enkelt online." />
+  <meta name="description" content="Arild's Frisør i Sandnes – familiebedrift siden 1967. Klipp, farge, skjegg og mer for hele familien. Bestill time enkelt online." />
   <meta name="theme-color" content="#111110" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
     <div class="container header__inner">
       <a href="#hjem" class="header__logo" aria-label="Arild's Frisør – hjem">
         <img
-          src="https://res.cloudinary.com/odin-systemer/image/upload/v1400494012/department/department_1419_webbanner.jpg"
+          src="assets/LogoWhiteTransparent.png"
           alt="Arild's Frisør"
           class="logo-img"
           width="120"
@@ -30,6 +30,7 @@
         <ul class="nav__list">
           <li><a href="#om-oss"    class="nav__link">Om oss</a></li>
           <li><a href="#tjenester" class="nav__link">Tjenester</a></li>
+          <li><a href="#galleri"   class="nav__link">Galleri</a></li>
           <li><a href="#team"      class="nav__link">Team</a></li>
           <li><a href="#kontakt"   class="nav__link">Kontakt</a></li>
         </ul>
@@ -61,6 +62,7 @@
     <ul class="mobile-nav__list">
       <li><a href="#om-oss"    class="mobile-nav__link">Om oss</a></li>
       <li><a href="#tjenester" class="mobile-nav__link">Tjenester</a></li>
+      <li><a href="#galleri"   class="mobile-nav__link">Galleri</a></li>
       <li><a href="#team"      class="mobile-nav__link">Team</a></li>
       <li><a href="#kontakt"   class="mobile-nav__link">Kontakt</a></li>
       <li>
@@ -78,7 +80,7 @@
   <section class="hero" id="hjem">
     <div class="hero__bg">
       <img
-        src="https://res.cloudinary.com/odin-systemer/image/upload/v1583140202/salonHomepageBanner/1419_1_homepagebanner.jpg"
+        src="assets/Hero%20image.jpg"
         alt=""
         class="hero__img"
         loading="eager"
@@ -88,7 +90,7 @@
     </div>
 
     <div class="container hero__content">
-      <span class="hero__eyebrow">Familiebedrift siden 1970</span>
+      <span class="hero__eyebrow">Familiebedrift siden 1967</span>
       <h1 class="hero__title">Håndverk.<br />Tradisjon.<br />Stil.</h1>
       <p class="hero__sub">
         Profesjonell frisørsalong i Sandnes for hele familien –<br class="hero__br" />
@@ -116,35 +118,33 @@
         <span class="section-label reveal">Vår historie</span>
         <h2 class="section-title reveal">Mer enn 50 år<br />med godt håndverk</h2>
         <p class="reveal">
-          Arild's Frisør har vært en del av Sandnes siden 1970. Det som startet som
+          Arild's Frisør har vært en del av Sandnes siden 1967. Det som startet som
           en liten familiebedrift, drives nå videre av neste generasjon – med samme
           engasjement for kvalitet og personlig service.
         </p>
         <p class="reveal">
           Vi tar imot hele familien: fra babyklipp til herreklipp og damefrisering.
-          Alle våre frisører er fagbrevutdannede og bruker produkter fra
-          <strong>Goldwell</strong>.
         </p>
 
         <div class="stats">
           <div class="stat reveal">
+            <span class="stat__num">Sentrum</span>
+            <span class="stat__label">Gjesdalveien 18</span>
+          </div>
+          <div class="stat reveal" style="--delay: 0.1s">
             <span class="stat__num">50+</span>
             <span class="stat__label">År i bransjen</span>
           </div>
-          <div class="stat reveal" style="--delay: 0.1s">
-            <span class="stat__num">100%</span>
-            <span class="stat__label">Fagbrevutdannede</span>
-          </div>
           <div class="stat reveal" style="--delay: 0.2s">
-            <span class="stat__num">Sandnes</span>
-            <span class="stat__label">Gjesdalveien 18</span>
+            <span class="stat__num">Goldwell</span>
+            <span class="stat__label">Produkter</span>
           </div>
         </div>
       </div>
 
       <div class="om-oss__image reveal">
         <img
-          src="https://res.cloudinary.com/odin-systemer/image/upload/v1583140298/salonHomepageBanner/1419_4_homepagebanner.jpg"
+          src="assets/474625787_941110168129257_2643248923127080864_n.jpg"
           alt="Profesjonell frisørklipp hos Arild's Frisør"
           loading="lazy"
         />
@@ -227,19 +227,30 @@
     </div>
   </section>
 
-  <!-- ===================== QUOTE BANNER ===================== -->
-  <div class="quote-banner" aria-hidden="true">
-    <img
-      src="https://res.cloudinary.com/odin-systemer/image/upload/v1583140173/salonHomepageBanner/1419_2_homepagebanner.jpg"
-      alt=""
-      loading="lazy"
-    />
-    <div class="quote-banner__overlay">
-      <blockquote class="quote-banner__text">
-        «Vi tar oss tid til deg»
-      </blockquote>
+  <!-- ===================== GALLERI ===================== -->
+  <section class="section galleri" id="galleri">
+    <div class="container">
+      <span class="section-label reveal">Galleri</span>
+      <h2 class="section-title reveal">Ferdige klipp</h2>
+      <div class="gallery-carousel reveal">
+        <div class="gallery-track" id="gallery-track">
+          <div class="gallery-item"><img src="assets/473180839_932208205686120_5207945859051548675_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+          <div class="gallery-item"><img src="assets/508157197_10007587269331507_4567558871631408017_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+          <div class="gallery-item"><img src="assets/52871779_2077344409022539_833433696504643584_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+          <div class="gallery-item"><img src="assets/509261029_10038002652956635_4397780747550393524_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+          <div class="gallery-item"><img src="assets/48058922_1963822610374720_9112334011128086528_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+          <div class="gallery-item"><img src="assets/509038259_10038616892895211_2213694551596717591_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+          <div class="gallery-item"><img src="assets/46513692_1935358953221086_8130815515909160960_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+          <div class="gallery-item"><img src="assets/53548570_2087323341357979_8060154022465634304_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+          <div class="gallery-item"><img src="assets/48396830_1974488162641498_5377180955876261888_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+          <div class="gallery-item"><img src="assets/65049039_2259718467451798_4793378090124312576_n.jpg" alt="Ferdig klipp" loading="lazy" /></div>
+        </div>
+        <div class="gallery-progress" id="gallery-progress">
+          <div class="gallery-progress__thumb" id="gallery-progress-thumb"></div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- ===================== TEAM ===================== -->
   <section class="section team" id="team">
@@ -251,22 +262,23 @@
         <div class="team-card reveal">
           <div class="team-card__img">
             <img
-              src="assets/32384c42665f49616d705f3120202020.jpg"
+              src="assets/32384c42665f49616d705f3120202020%20%281%29.jpg"
               alt="Christoffer – daglig leder og frisør"
               loading="lazy"
+              style="object-position: calc(50% - 15px) center;"
             />
           </div>
           <div class="team-card__info">
             <h3 class="team-card__name">Christoffer</h3>
             <span class="team-card__role">Daglig leder / Frisør</span>
-            <p class="team-card__bio">Jeg har jobbet som frisør siden 2000 og har svennebrev i både dame- og herrefrisørfaget. Jeg overtok virksomheten etter min far i 2006 og jobber nå stort sett som herrefrisør.</p>
+            <p class="team-card__bio">Christoffer har jobbet som frisør siden 2000 og har svennebrev i både dame- og herrefrisørfaget. Han overtok virksomheten etter sin far i 2006 og jobber nå stort sett som herrefrisør.</p>
           </div>
         </div>
 
         <div class="team-card reveal" style="--delay: 0.15s">
           <div class="team-card__img">
             <img
-              src="assets/32384c42665f49616d705f3320202020.jpg"
+              src="assets/32384c42665f49616d705f3320202020%20%281%29.jpg"
               alt="Camille – frisør"
               loading="lazy"
             />
@@ -274,7 +286,7 @@
           <div class="team-card__info">
             <h3 class="team-card__name">Camille</h3>
             <span class="team-card__role">Frisør</span>
-            <p class="team-card__bio">Jeg har jobbet som frisør siden 2004 og har svennebrev i dame- og herrefrisørfaget. Jeg liker å jobbe med klipp og fargeteknikker. Foliestriper er min spesialitet, og brudepynting med make-up er jeg også glad i.</p>
+            <p class="team-card__bio">Camille har jobbet som frisør siden 2004 og har svennebrev i dame- og herrefrisørfaget. Hun liker å jobbe med klipp og fargeteknikker. Foliestriper er spesialiteten hennes, og brudepynting med make-up er hun også glad i.</p>
           </div>
         </div>
 
@@ -328,8 +340,8 @@
             <a href="mailto:post@arildsfrisor.no">post@arildsfrisor.no</a>
           </li>
           <li class="contact-item">
-            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            <a href="https://www.instagram.com/arildsfrisor/" target="_blank" rel="noopener noreferrer">@arildsfrisor</a>
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <a href="https://www.facebook.com/arildsfrisor" target="_blank" rel="noopener noreferrer">Facebook</a>
           </li>
         </ul>
         <a
@@ -348,7 +360,7 @@
     <div class="container footer__inner">
       <a href="#hjem" class="footer__logo" aria-label="Tilbake til toppen">
         <img
-          src="https://res.cloudinary.com/odin-systemer/image/upload/v1400494012/department/department_1419_webbanner.jpg"
+          src="assets/LogoWhiteTransparent.png"
           alt="Arild's Frisør"
           class="logo-img"
           width="100"
@@ -356,13 +368,28 @@
           loading="lazy"
         />
       </a>
-      <nav class="footer__links" aria-label="Footer-lenker">
-        <a href="https://www.instagram.com/arildsfrisor/" target="_blank" rel="noopener noreferrer" class="footer__link">Instagram</a>
-        <a href="https://arilds.onlinetimebok.no/" target="_blank" rel="noopener noreferrer" class="footer__link">Bestill time</a>
-      </nav>
-      <p class="footer__copy">© 2024 Arild's Frisør AS &mdash; Sandnes</p>
+      <p class="footer__contact">
+        Gjesdalveien 18, 4306 Sandnes
+        <span class="footer__sep">·</span>
+        <a href="tel:+4751665965">51 66 59 65</a>
+        <span class="footer__sep">·</span>
+        <a href="mailto:post@arildsfrisor.no">post@arildsfrisor.no</a>
+        <span class="footer__sep">·</span>
+        <a href="https://www.facebook.com/arildsfrisor" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </p>
+      <p class="footer__copy">© 2025 Arild's Frisør AS &mdash; Webdesign av <a href="https://artemesis.no" target="_blank" rel="noopener noreferrer">Artemesis</a></p>
     </div>
   </footer>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildegalleri" aria-hidden="true">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Lukk">&#x2715;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Forrige">&#x2039;</button>
+    <div class="lightbox__img-wrap">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Neste">&#x203A;</button>
+  </div>
 
   <script src="main.js"></script>
 </body>
